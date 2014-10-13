@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Minha Localização</title>
+    <link rel="stylesheet" type="text/css" href="app/css/bootstrap.min.css">
+    <style type="text/css">
+      .map {
+        display: inline-block;
+      }
+      #map-location {
+        height: 250px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <h1>Minha Localização</h1>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <button class="btn btn-success" onclick="getLocation()">Localizar</button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <div class="map"><div id="map-location"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <div id="error" style="display: none" class="alert alert-danger"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="app/js/app.js"></script>
+  </body>
+</html>
